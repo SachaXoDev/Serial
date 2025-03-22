@@ -2,6 +2,7 @@
 #define REGISTRATIONWINDOW_H
 
 #include <QDialog>
+#include <QSqlQuery>
 
 namespace Ui {
 class RegistrationWindow;
@@ -16,10 +17,12 @@ public:
     ~RegistrationWindow();
 
 signals:
+    void userRegistered(const QString &username, const QString &password);
     void cancelPushButton();
 
 private slots:
     void on_cancelPushButton_clicked();
+    void on_registerPushButton_clicked();
 
 private:
     Ui::RegistrationWindow *ui;

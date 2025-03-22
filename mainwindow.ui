@@ -120,7 +120,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QLineEdit" name="passwordLineEdit_2">
+    <widget class="QLineEdit" name="loginLineEdit">
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -135,7 +135,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="OkpushButton">
      <property name="geometry">
       <rect>
        <x>200</x>

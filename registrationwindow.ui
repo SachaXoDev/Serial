@@ -79,7 +79,7 @@
      <string>Повторите пароль:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="loginLineEdit">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -97,7 +97,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="passwordLineEdit">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -115,7 +115,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="passwordLineEdit_2">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -133,7 +133,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="registerPushButton">
     <property name="geometry">
      <rect>
       <x>250</x>
