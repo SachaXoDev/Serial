@@ -35,6 +35,35 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #b399d4;  /* Основной сиреневый цвет */
+    border: 1px solid #8e7cc3;  /* Граница немного темнее */
+    border-radius: 5px;         /* Закругленные углы */
+    padding: 5px 10px;          /* Отступы внутри кнопки */
+    color: white;               /* Белый текст */
+    font-weight: bold;          /* Жирный шрифт */
+}
+
+/* Состояние при наведении */
+QPushButton:hover {
+    background-color: #9c7fc8;  /* Более насыщенный сиреневый */
+    border: 1px solid #7d5fb3;
+}
+
+/* Состояние при нажатии */
+QPushButton:pressed {
+    background-color: #8a6dbb;  /* Еще более темный оттенок */
+    border: 1px solid #6a4d9c;
+}
+
+/* Отключенная кнопка */
+QPushButton:disabled {
+    background-color: #d5c8e7;  /* Светлый сиреневый */
+    color: #a090b0;             /* Сероватый текст */
+    border: 1px solid #c0b0d0;
+}</string>
+    </property>
     <property name="text">
      <string>Регистрация</string>
     </property>
@@ -57,9 +86,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>130</width>
+       <x>15</x>
+       <y>27</y>
+       <width>100</width>
        <height>60</height>
       </rect>
      </property>
@@ -90,9 +119,9 @@
     <widget class="QLabel" name="passwordLabel">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>140</width>
+       <x>15</x>
+       <y>77</y>
+       <width>100</width>
        <height>60</height>
       </rect>
      </property>

@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <QSqlQuery>
+#include <QMessageBox>
+#include <QSqlError>
 
 namespace Ui {
 class RegistrationWindow;

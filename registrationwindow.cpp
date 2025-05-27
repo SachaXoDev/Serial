@@ -1,13 +1,29 @@
 #include "registrationwindow.h"
 #include "ui_registrationwindow.h"
-#include <QMessageBox>
-#include <QSqlError>
 
 RegistrationWindow::RegistrationWindow(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::RegistrationWindow)
 {
     ui->setupUi(this);
+
+    this->setStyleSheet(
+        "QDialog { background: #f5f5f5; }"
+        "QPushButton {"
+        "   background: white;"
+        "   border: 1px solid #ccc;"
+        "   border-radius: 5px;"
+        "   padding: 8px;"
+        "   font-size: 14px;"
+        "}"
+        "QPushButton:hover { background: #e6e6e6; }"
+        "QLineEdit {"
+        "   border: 1px solid #ccc;"
+        "   border-radius: 4px;"
+        "   padding: 4px;"
+        "   font-size: 12px;"
+        "}"
+        );
 }
 
 RegistrationWindow::~RegistrationWindow()
