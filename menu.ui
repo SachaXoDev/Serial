@@ -42,9 +42,9 @@
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>40</x>
      <y>40</y>
-     <width>471</width>
+     <width>491</width>
      <height>271</height>
     </rect>
    </property>
@@ -56,14 +56,14 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>469</width>
+      <width>489</width>
       <height>269</height>
      </rect>
     </property>
     <widget class="QLabel" name="emptyLabel">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>120</x>
        <y>90</y>
        <width>261</width>
        <height>101</height>

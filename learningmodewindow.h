@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QList>
 #include <QPair>
+#include <QProgressBar>
 
 class QLabel;
 class QLineEdit;
@@ -11,12 +12,14 @@ class QPushButton;
 class QHBoxLayout;
 class QVBoxLayout;
 
+class MainWindow;
+
 class LearningModeWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit LearningModeWindow(const QList<QPair<QString, QString>>& cards, QWidget *parent = nullptr);
+    explicit LearningModeWindow(int moduleId, const QList<QPair<QString, QString>>& cards, MainWindow *mainWindowParent = nullptr, QWidget *parent = nullptr);
 
 private slots:
     void handleNavigation();
@@ -25,8 +28,15 @@ private slots:
     void exitPushCard();
     void resetCardOrder();
     void randomCards();
+    void likeCards();
+    void enableCheckButtonIfAnswerProvided();
+    void updateTextColor();
+    void updateStarButton();
+    void checkCompletion();
 
 private:
+    int m_moduleId;
+    MainWindow *m_mainWindow;
     void updateCard();
     void updateStats();
     void updateNavigationButtons();
@@ -36,7 +46,7 @@ private:
     QList<QPair<QString, QString>> m_originalCards;
     QList<bool> m_answerResults;
 
-    // UI элементы
+    QPushButton* starButton;
     QLabel* wordLabel;
     QLabel* resultLabel;
     QLabel* statsLabel;
@@ -54,7 +64,11 @@ private:
     bool m_answerChecked = false;
     bool m_showAnswer = false;
     bool m_forwardDirection = true;
+
+    QLabel *m_statsLabel;
+    QProgressBar *m_progressBar;
 };
 
 #endif // LEARNINGMODEWINDOW_H
+
 

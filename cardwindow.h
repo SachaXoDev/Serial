@@ -21,6 +21,7 @@ private slots:
     void showPrevCard();
     void flipCard();
     void exitPushCard();
+    void animateCardChange();
 
 private:
     void updateCard();

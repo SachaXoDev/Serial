@@ -5,6 +5,8 @@
 #include <QSqlQuery>
 #include <QMessageBox>
 #include <QSqlError>
+#include <QPainterPath>
+#include <QLineEdit>
 
 namespace Ui {
 class RegistrationWindow;
@@ -28,6 +30,7 @@ private slots:
 
 private:
     Ui::RegistrationWindow *ui;
+    void setupPasswordVisibilityToggle(QLineEdit *passwordLineEdit);
 };
 
 #endif // REGISTRATIONWINDOW_H

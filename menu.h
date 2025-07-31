@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <QVBoxLayout>
 #include <QSqlError>
+#include <QPainterPath>
 
 namespace Ui {
 class Menu;
@@ -31,6 +32,7 @@ private slots:
     void deleteModule();
     void showCardsManagementDialog(int moduleId, const QString &moduleName);
     void startLearningMode(int moduleId);
+    void on_favoriteButton_clicked();
 
 signals:
     void exitPush();
@@ -48,3 +50,4 @@ private:
 };
 
 #endif // MENU_H
+
